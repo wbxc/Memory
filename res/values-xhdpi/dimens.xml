@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_text_size">20sp</dimen>
+    <dimen name="common_re_height">45dip</dimen>
+    <dimen name="main_home_count_re">100dip</dimen>
+    <dimen name="common_text_size_18">18sp</dimen>
+</resources>

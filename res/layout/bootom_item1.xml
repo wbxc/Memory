@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_color" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5dip" >
+        <LinearLayout
+            android:id="@+id/button_re"
+            android:paddingTop="3dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/kaodian1"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/corner_bg_item_button"
+                android:text="@string/kaodian1"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_re"
+            android:layout_marginTop="5dip"
+            android:paddingBottom="@dimen/common_interval_button" >
+            <Button
+                android:id="@+id/remmber_all_knowleage"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/memory_jide_quanbu_ico"
+                android:text="@string/jidequanbu"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

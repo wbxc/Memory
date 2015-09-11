@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/default_color"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/common_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_re_height"
+        android:background="@color/light_green" >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/common_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="工程经济"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size" />
+    </RelativeLayout>
+
+    <GridView
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/common_top"
+        android:id="@+id/content_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="15dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="15dp" >
+    </GridView>
+
+</RelativeLayout>

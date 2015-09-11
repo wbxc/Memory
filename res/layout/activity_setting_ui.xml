@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/setting_common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" >
+
+        <RelativeLayout
+            android:id="@+id/kaoshileixing_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/corner_setting_kuang_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:drawableLeft="@drawable/setting_zhuangye_icon"
+                android:drawablePadding="10dip"
+                android:gravity="center|left"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="考试类型"
+                android:textColor="@color/setting_color_text"
+                android:textSize="@dimen/common_text_size_18" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dip"
+                android:src="@drawable/icon_forward_pressed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kaoshileixing_re"
+            android:background="@drawable/corner_setting_kuang_bg"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="25dip" >
+
+            <RelativeLayout
+                android:id="@+id/userInfo_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dip"
+                    android:drawableLeft="@drawable/setting_user_icon"
+                    android:drawablePadding="10dip"
+                    android:gravity="center|left"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="账号信息"
+                    android:textColor="@color/setting_color_text"
+                    android:textSize="@dimen/common_text_size_18" />
+
+                <TextView
+                    android:id="@+id/username_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:text="5haoxue168"
+                    android:textColor="#8b8b8c"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/zhongjian_text"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_below="@+id/userInfo_re"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/password_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zhongjian_text"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:drawableLeft="@drawable/setting_password_icon"
+                    android:drawablePadding="10dip"
+                    android:gravity="center|left"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="修改密码"
+                    android:textColor="@color/setting_color_text"
+                    android:textSize="@dimen/common_text_size_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/icon_forward_pressed" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/corner_setting_kuang_bg"
+            android:layout_marginTop="25dip" >
+
+            <RelativeLayout
+                android:id="@+id/yijian_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dip"
+                    android:drawableLeft="@drawable/setting_feed_icon"
+                    android:drawablePadding="10dip"
+                    android:gravity="center|left"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="意见反馈"
+                    android:textColor="@color/setting_color_text"
+                    android:textSize="@dimen/common_text_size_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/icon_forward_pressed" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/zhongjian2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_below="@+id/yijian_re"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/setting_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/banben_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zhongjian2"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:drawableLeft="@drawable/setting_version_icon"
+                    android:drawablePadding="10dip"
+                    android:gravity="center|left"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="版本检测"
+                    android:textColor="@color/setting_color_text"
+                    android:textSize="@dimen/common_text_size_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/icon_forward_pressed" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/zhongjian3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_below="@+id/banben_re"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/about_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zhongjian3"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                  android:layout_marginLeft="10dip"
+                    android:drawableLeft="@drawable/setting_about_icon"
+                    android:drawablePadding="10dip"
+                    android:gravity="center|left"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="关于"
+                    android:textColor="@color/setting_color_text"
+                    android:textSize="@dimen/common_text_size_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/icon_forward_pressed" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bootom_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thrid"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="35dip"
+            android:background="@drawable/memory_finshed_bg_button"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <Button
+                android:id="@+id/login_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

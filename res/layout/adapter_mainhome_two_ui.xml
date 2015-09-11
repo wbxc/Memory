@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout 
+        android:background="@drawable/corner_bg"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_height="90dip"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent">
+        <TextView 
+            android:layout_marginTop="20dip"
+            android:id="@+id/course_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:text="水利水电工程"/>
+        <TextView 
+            android:layout_marginTop="5dip"
+            android:layout_below="@+id/course_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:text="知识点正在录入中，敬请期待"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res/com.ihaoxue.memory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/test_common_title" />
+
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true">
+
+        <com.ihaoxue.memory.widget.DemoProgressView
+            android:id="@+id/demo_ProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            my:demoprogresshight="20dip"
+            my:progress_left="10dip"
+            my:progress_right="10dip"
+            my:textColor="@color/black"
+            my:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_below="@+id/second"
+        android:id="@+id/question_common_title"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingTop="8dip"
+        android:paddingBottom="8dip"
+        android:layout_width="match_parent">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="影响时间资金价值的因素"
+            android:textSize="18sp"
+            android:textColor="#332c2b" />
+    </RelativeLayout>
+    <com.ihaoxue.memory.widget.MemoryViewPager
+        android:id="@+id/memory_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bootommmmm"
+        android:layout_below="@+id/question_common_title" >
+    </com.ihaoxue.memory.widget.MemoryViewPager>
+
+</RelativeLayout>

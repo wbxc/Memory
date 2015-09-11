@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res/com.ihaoxue.memory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:id="@+id/content_top"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_below="@+id/top" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <com.ihaoxue.memory.widget.DemoProgressView
+                android:id="@+id/demo_ProgressView"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                my:demoprogresshight="20dip"
+                my:progress_left="10dip"
+                my:progress_right="10dip"
+                my:textColor="@color/black"
+                my:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/question_third"
+        android:layout_below="@+id/content_top"
+        android:orientation="vertical" >
+
+        <com.ihaoxue.memory.widget.MemoryViewPager
+            android:id="@+id/content_viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </com.ihaoxue.memory.widget.MemoryViewPager>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/question_third"
+        android:layout_width="match_parent"
+        android:layout_height="110dip"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/study_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/corner_pager_main_memory_rect"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/study_next_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="下一个"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/study_re"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/corner_pager_main_memory_rect" >
+
+            <Button
+                android:id="@+id/remember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/zhongjian_text"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="记得"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/zhongjian_text"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_centerVertical="true"
+                android:background="@color/black" />
+
+            <Button
+                android:id="@+id/unremember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/zhongjian_text"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/zhongjian_text"
+                android:background="@null"
+                android:gravity="center"
+                android:text="不记得"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/again_study"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/corner_pager_main_memory_rect"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/again_study_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/zhongjian_text1"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:gravity="center"
+                android:text="下一个"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/zhongjian_text1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_centerVertical="true"
+                android:background="@color/black" />
+
+            <Button
+                android:id="@+id/again_study_again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/zhongjian_text1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="再次记忆"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

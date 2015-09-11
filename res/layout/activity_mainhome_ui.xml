@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.ihaoxue.memory"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_height="@dimen/common_re_height"
+        android:background="#0A99FF" >
+        <ImageView
+            android:layout_marginLeft="3dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/common_back" />
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="一级建造师"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size" />
+        <ImageView
+            android:layout_marginRight="10dip"
+            android:id="@+id/setting_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/memry_setting_ico" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/count_re"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_home_count_re"
+        android:layout_below="@+id/top" >
+        <Button 
+            android:id="@+id/continue_last_progress"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/common_text_size"
+            android:text="@string/jixushangcijindu"
+            android:textColor="@color/white"
+            android:background="@drawable/memory_jindu_bg_icon"/>
+    </RelativeLayout>
+
+    <ListView
+        android:background="@color/white"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/content_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count_re"
+        android:divider="@null"
+        android:dividerHeight="0dip" >
+    </ListView>
+
+</RelativeLayout>

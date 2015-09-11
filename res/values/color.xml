@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_color">#eeeeef</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_green">#20b2aa</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="hint_text_color">#a9a9a9</color>
+    <color name="corner_bg">#dcdcdc</color>
+    <color name="corner_stroke">#00bfff</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="login_button_bg_color">#0a99ff</color>
+    <color name="item_button_bg">#EEEEEE</color>
+    <color name="item_button_textcolor">#332c2b</color>
+    <color name="dark_black">#554F4E</color>
+    <color name="setting_color_text">#332c2b</color>
+    <color name="setting_line_color">#a1a1a1</color>
+    
+    <color name="init_memory_text_color">#474443</color>
+    <color name="about_memory_log_bg">#00A2E9</color>
+</resources>

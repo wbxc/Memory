@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html40/strict.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css"> 
+html,body{-webkit-touch-callout: none;}
+.hdtest{float:left;color:#FC0;}
+.hdimg { float:left; color: green;} 
+.btn_img {	width:28px;	height:28px;margin-left:14px;	margin-right:5px;}</style>
+ <script>
+       function getJson(jsonStr) {
+				var data;
+				eval("data=" + jsonStr);
+				return data;
+			}
+			//'<div style="display: inline;">'+"影响资金时间价值的因素"+'</div>'+
+           function paresQuestionTemp(temp,number){
+				var jsonObjects = getJson(temp) ;
+				var questionArr = jsonObjects.questionArr ;
+				document.body.innerHTML ='<div style="display: inline;">'+questionArr[number]+'</div>'   ;
+				//document.body.innerHTML = temp ;
+			}
+			
+			
+			
+			function paresQuestionTempContent(temp){
+				var jsonObjects = getJson(temp) ;
+				var questionContent = jsonObjects.questionContent ;
+				document.body.innerHTML ='</div>'+'<div style="display: inline;">'+questionContent+'</div>'  ;
+			}
+			
+			
+			//测试
+			function paresQuestionContent(temp){
+				var tempss = '<div style="display: inline;">'+temp+'</div>' ;
+				document.body.innerHTML = tempss ;
+			} 
+			// 测试
+			function pareQuestionSelect(temp){
+			     var tempss = '<div style="display: inline;">'+temp+'</div>' ;
+				document.body.innerHTML = tempss ;
+			}
+			
+			
+			
+			
+			function paresQuestionTempContentAnser(temp){
+				var jsonObjects = getJson(temp) ;
+				var questionContent = jsonObjects.questionAnswer ;
+				
+				document.body.innerHTML ='<div style="display: inline;">'+questionContent+'</div>'   ;
+			}
+			
+   function showMsg(temp,number){
+      //alert("hello world!");
+      paresQuestionTemp(temp,number) ;
+   }
+   
+    function showContentAnswer(temp){
+   		paresQuestionTempContentAnser(temp) ;
+   }
+   
+   function showContent(temp){
+   		paresQuestionTempContent(temp) ;
+   }
+   function showMsgInAndroid(){
+      myjs.showMsg('hello in android!');
+   }
+</script>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>

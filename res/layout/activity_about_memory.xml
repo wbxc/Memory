@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_color" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/common_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" >
+        <RelativeLayout 
+            android:layout_marginTop="40dip"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent" >
+            <ImageView 
+                android:id="@+id/logo"
+                android:layout_height="150dip"
+                android:layout_width="150dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/corner_about_log_bg"/>
+            <TextView 
+                android:layout_marginTop="20dip"
+                android:layout_below="@+id/logo"
+                android:id="@+id/app_name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="记忆宝"/>
+            <TextView 
+                android:layout_marginTop="5dip"
+                android:layout_below="@+id/app_name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="V1.0.0"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/about_service_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="58dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_service_phone"
+                android:textColor="#626262"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_phone_number"
+                android:textColor="#626262"
+                android:autoLink="phone"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/about_service_phone"
+            android:layout_alignLeft="@+id/about_service_phone"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_site"
+                android:textColor="#626262"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/about_site_url"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

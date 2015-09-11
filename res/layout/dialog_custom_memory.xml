@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_height="150dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/corners_bg_my" >
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="95dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="您确定要退出?"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/imge1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dip"
+            android:background="#e1e1e1"
+            android:layout_below="@+id/top_title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imge1" >
+            <Button
+                android:id="@+id/fou_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/zhongjian_image"
+                android:background="@color/transparent"
+                android:textColor="#747474"
+                android:text="再逛逛"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/zhongjian_image"
+                android:layout_width="1.5dip"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#e1e1e1" />
+
+            <Button
+                android:id="@+id/go_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/zhongjian_image"
+                android:background="@color/transparent"
+                android:text="马上登录"
+                android:textStyle="bold"
+                android:textColor="#75BF22"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

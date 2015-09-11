@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:id="@+id/scrollview_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/select_question_re" >
+        <RelativeLayout
+            android:id="@+id/top_re"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/default_color" >
+            <WebView
+                android:id="@+id/webview_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/white" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/webview_item_content" >
+                <RelativeLayout
+                    android:id="@+id/mu_lu_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toLeftOf="@+id/mulu_text"
+                        android:background="@color/dark_black" />
+
+                    <TextView
+                        android:id="@+id/mulu_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="目录" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:layout_toRightOf="@+id/mulu_text"
+                        android:background="@color/dark_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mu_lu_re"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/corner_pager_main_memory_rect"
+                    android:paddingBottom="5dip"
+                    android:layout_marginBottom="5dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="10dip" >
+                    <TextView
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="1Z101000工程经济" />
+
+                    <TextView
+                        android:id="@+id/second_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/first_name"
+                         android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="—1Z101010资金时间价值的计算及应用" />
+
+                    <TextView
+                        android:id="@+id/three_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/second_name"
+                         android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="——资金时间价值" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/select_question_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_color"
+        android:layout_alignParentBottom="true" >
+        <LinearLayout
+            android:id="@+id/select_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/remmber_again_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
